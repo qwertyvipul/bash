@@ -22,7 +22,7 @@ sudo chmod +x ~/.vnc/xstartup
 
 # Run VNC as a system service
 echo Running VNC as a system service
-sudo cat >/etc/system/system/vncserver@.service <<EOL
+sudo bash -c "cat >/etc/systemd/system/vncserver@.service" <<EOL
 [Unit]
 Description=Start TightVNC server at startup
 After=syslog.target network.target
