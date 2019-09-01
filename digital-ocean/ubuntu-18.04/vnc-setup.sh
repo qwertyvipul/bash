@@ -3,9 +3,9 @@
 
 # Install the desktop environment and VNC server
 echo installing the desktop environment and VNC server 
-apt-get update
-apt install xfce4 xfce4-goodies
-apt install tightvncserver
+sudo apt-get update
+sudo apt install xfce4 xfce4-goodies
+sudo apt install tightvncserver
 vncserver
 
 # Configure the VNC server
